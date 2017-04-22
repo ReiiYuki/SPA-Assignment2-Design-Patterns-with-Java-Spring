@@ -9,25 +9,33 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<title><tiles:getAsString name="title" /></title>
 	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css" >
 </head>
 <body>
 	
-    <header id="header">
+    <div id="header">
         <tiles:insertAttribute name="header" />
-    </header>
- 
-    <section id="sidemenu">
-        <tiles:insertAttribute name="menu" />
-    </section>
-         
-    <section id="site-content">
-        <tiles:insertAttribute name="body" />
-    </section>
-     
-    <footer id="footer">
+    </div>
+    <div class="container">
+    	<section class="section">
+		 	<div class="columns">
+		 		<div class="column is-one-quarter">
+		 			<div id="sidemenu">
+		        		<tiles:insertAttribute name="menu" />
+		    		</div>
+		 		</div>
+		 		<div class="column">
+		 			<div id="site-content">
+		        		<tiles:insertAttribute name="body" />
+		    		</div>
+		 		</div>
+		 	</div>
+		 </section>
+	 </div>
+    
+    <div id="footer">
         <tiles:insertAttribute name="footer" />
-    </footer>
+    </div>
 </body>
 
 </html>

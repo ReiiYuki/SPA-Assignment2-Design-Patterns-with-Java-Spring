@@ -1,4 +1,4 @@
-package com.pakponj.spa.assignment2.configuration;
+package com.voraton.assignment2.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -12,7 +12,7 @@ import org.springframework.web.servlet.view.tiles3.TilesViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = "com.pakponj.spa.assignment2")
+@ComponentScan(basePackages = "com.voraton.assignment2")
 public class AppConfig extends WebMvcConfigurerAdapter {
 	
 	// Configure
